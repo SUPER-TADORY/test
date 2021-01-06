@@ -23,7 +23,7 @@ def main():
     with open(inputfile) as f:
         for st in f:
             st=st.rstrip("\n")
-            if ":"　:
+            if ":"　in st:
                 n_w_dict[int(st.split(":")[0])]=st.split(":")[1]
             else:
                 num=st
